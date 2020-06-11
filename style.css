@@ -17,9 +17,10 @@
     border-radius: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 830px) {
     .wrapper {
         justify-content: flex-start;
+        margin-bottom: 20px;
     }
 
     .wrapper > * {
