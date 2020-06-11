@@ -20,11 +20,14 @@
 @media (max-height: 830px) {
     .wrapper {
         justify-content: flex-start;
-        padding-bottom: 20px;
     }
 
     .wrapper > * {
         flex-shrink: 0;
+    }
+
+    body {
+        padding-bottom: 50px;
     }
 }
 
