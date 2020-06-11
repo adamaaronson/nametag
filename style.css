@@ -41,6 +41,16 @@
     font-weight: 400;
 }
 
+.byline a {
+    color: currentColor;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.byline a:hover {
+    color: grey;
+}
+
 .menu-header > * {
     margin: 0;
 }
