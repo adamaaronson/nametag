@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Tag Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sriracha">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="menu-header">
+                <h1>NAME TAG GENERATOR</h1>
+                <h4 class="byline">by Adam Aaronson</h4>
+            </div>
+            <div class="menu-body">
+                <form method="GET">
+                    <div class="form-question">
+                        <div class="question-label">
+                            <label for="name">NAME</label>
+                        </div>
+                        <div class="question-input">
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="form-question">
+                        <div class="question-label">
+                            <label for="language">LANGUAGE</label>
+                        </div>
+                        <div class="question-input">
+                            <select name="language" id="language">
+                                <option value="eng">English</option>
+                                <option value="esp">Español</option>
+                                <option value="fra">Français</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-question">
+                        <div class="question-label">
+                            <label for="tag-color">TAG COLOR</label>
+                        </div>
+                        <div class="question-input">
+                            <input type="color" name="tag-color" id="tag-color" value="#c7210f">
+                        </div>
+                    </div>
+                    <div class="form-question">
+                        <div class="question-label">
+                            <label for="name-color">NAME COLOR</label>
+                        </div>
+                        <div class="question-input">
+                            <input type="color" name="name-color" id="name-color" value="#222222">
+                        </div>
+                    </div>
+                    <div class="form-question">
+                        <button type="submit" class="generate-button">GENERATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="nametag" id="nametag">
+            <div class="nametag-header">
+                <h1 class="hello" id="hello">HELLO</h1>
+                <h3 class="mynameis" id="mynameis">MY NAME IS</h3>
+            </div>
+            <div class="nametag-body">
+                <div class="nametag-name" id="nametag-name"></div>
+            </div>
+            <div class="nametag-footer"></div>
+        </div>
+    </div>
+</body>
+</html>
